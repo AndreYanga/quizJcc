@@ -2,17 +2,16 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #005E3A;
-  color: #F0FDFB;
+  background-color: #EDEDED; /* Fundo alterado para um branco levemente escurecido */
+  color: #005E3A; /* Cor do texto */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
 }
 
-h1, h2 {
+h1, h2, h3, p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 /* Preloader */
@@ -22,7 +21,7 @@ h1, h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #005E3A;
+  background-color: #EDEDED; /* Fundo alterado para combinar com o body */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,23 +53,24 @@ h1, h2 {
 /* Main Section */
 .hero {
   padding: 20px 20px;
+  background-color: #EDEDED; /* Fundo alterado para combinar com o body */
 }
 
 .hero h2 {
-  font-size: 2.25rem; /* Ajustado para ser maior */
-  color: #EED449;
+  font-size: 2.25rem;
+  color: #005E3A; /* Cor do texto */
   margin-bottom: 0.5rem;
 }
 
 .hero h3.quiz-title {
-  font-size: 1.25rem; /* Texto menor para "Quiz JCC" */
-  color: #EED449;
+  font-size: 1.25rem;
+  color: #EED449; /* Cor do texto */
   margin-top: 1.5rem; /* Espaço entre "Bem-vindo" e "Quiz JCC" */
 }
 
 .hero p {
   font-size: 1.25rem;
-  color: #F0FDFB;
+  color: #005E3A; /* Cor do texto */
 }
 
 .btn-primary {
@@ -91,7 +91,7 @@ h1, h2 {
 /* Footer */
 .footer {
   background-color: #005E3A;
-  color: #F0FDFB;
+  color: #EDEDED; /* Cor do texto para combinar com o fundo */
   padding: 10px;
   margin-top: auto;
 }
