@@ -125,3 +125,17 @@ h1, h2 {
   padding: 10px;
   margin-top: auto;
 }
+
+/* Alinhamento Flexbox no Footer */
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo no Footer */
+.footer-logo {
+  width: 50px; /* Define o tamanho da logo */
+  height: auto;
+  margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
