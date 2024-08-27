@@ -2,16 +2,17 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #EDEDED; /* Fundo alterado para um branco levemente escurecido */
-  color: #005E3A; /* Cor do texto */
+  background-color: #005E3A;
+  color: #F0FDFB;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
 }
 
-h1, h2, h3, p {
+h1, h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 /* Preloader */
@@ -21,7 +22,7 @@ h1, h2, h3, p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #EDEDED; /* Fundo alterado para combinar com o body */
+  background-color: #005E3A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,10 +30,25 @@ h1, h2, h3, p {
   transition: opacity 0.5s ease-out;
 }
 
+/* Logo do Preloader */
 .preloader-logo {
   width: 100px;
   height: 100px;
+  border-radius: 50%; /* Faz a logo ficar em formato circular */
+  background-color: #FFFFFF; /* Fundo branco para o círculo */
+  display: flex; /* Garante que a imagem fique centralizada */
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Espaçamento interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a logo */
   animation: spin 2s linear infinite;
+}
+
+/* Ajustar a imagem dentro do círculo */
+.preloader-logo img {
+  width: 100%; /* Ajusta a imagem para preencher o círculo */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 50%; /* Faz a imagem ficar dentro do círculo */
 }
 
 @keyframes spin {
@@ -45,32 +61,46 @@ h1, h2, h3, p {
   padding: 10px;
 }
 
+/* Logo */
 .logo {
   width: 120px;
   height: 120px;
+  border-radius: 60%; /* Faz a logo ficar em formato circular */
+  background-color: #FFFFFF; /* Fundo branco para o círculo */
+  padding: 10px; /* Espaçamento interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a logo */
+  display: inline-flex; /* Garante que a imagem fique centralizada */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajustar a imagem dentro do círculo */
+.logo img {
+  width: 100%; /* Ajusta a imagem para preencher o círculo */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 50%; /* Faz a imagem ficar dentro do círculo */
 }
 
 /* Main Section */
 .hero {
   padding: 20px 20px;
-  background-color: #EDEDED; /* Fundo alterado para combinar com o body */
 }
 
 .hero h2 {
-  font-size: 2.25rem;
-  color: #005E3A; /* Cor do texto */
+  font-size: 2.25rem; /* Ajustado para ser maior */
+  color: #EED449;
   margin-bottom: 0.5rem;
 }
 
 .hero h3.quiz-title {
-  font-size: 1.25rem;
-  color: #EED449; /* Cor do texto */
+  font-size: 1.25rem; /* Texto menor para "Quiz JCC" */
+  color: #EED449;
   margin-top: 1.5rem; /* Espaço entre "Bem-vindo" e "Quiz JCC" */
 }
 
 .hero p {
   font-size: 1.25rem;
-  color: #005E3A; /* Cor do texto */
+  color: #F0FDFB;
 }
 
 .btn-primary {
@@ -91,7 +121,7 @@ h1, h2, h3, p {
 /* Footer */
 .footer {
   background-color: #005E3A;
-  color: #EDEDED; /* Cor do texto para combinar com o fundo */
+  color: #F0FDFB;
   padding: 10px;
   margin-top: auto;
 }
