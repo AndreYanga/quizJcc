@@ -63,8 +63,8 @@ h1, h2 {
 
 /* Logo */
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 60%; /* Faz a logo ficar em formato circular */
   background-color: #FFFFFF; /* Fundo branco para o círculo */
   padding: 10px; /* Espaçamento interno */
@@ -76,9 +76,9 @@ h1, h2 {
 
 /* Ajustar a imagem dentro do círculo */
 .logo img {
-  width: 100%; /* Ajusta a imagem para preencher o círculo */
+  width: 82%; /* Ajusta a imagem para preencher o círculo */
   height: auto; /* Mantém a proporção da imagem */
-  border-radius: 50%; /* Faz a imagem ficar dentro do círculo */
+   /* Faz a imagem ficar dentro do círculo */
 }
 
 /* Main Section */
